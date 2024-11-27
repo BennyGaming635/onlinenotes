@@ -28,28 +28,24 @@ header {
     margin-bottom: 10px;
 }
 
-button {
-    padding: 8px 16px;
-    background-color: #4CAF50;
-    color: white;
+.icon-button {
+    padding: 10px;
+    background-color: transparent;
     border: none;
-    border-radius: 4px;
+    font-size: 24px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #45a049;
+.icon-button:hover {
+    color: #4CAF50;
 }
 
-button i {
-    margin-right: 8px;
-}
-
-button[title] {
+/* Hover text */
+.icon-button[title] {
     position: relative;
 }
 
-button[title]:hover::after {
+.icon-button[title]:hover::after {
     content: attr(title);
     position: absolute;
     top: 100%;
