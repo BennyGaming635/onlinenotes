@@ -12,16 +12,19 @@
     <div class="notepad-container">
         <header>
             <button id="theme-toggle" class="icon-button" title="Toggle Dark/Light Mode"><i class="fas fa-adjust"></i></button>
-            <button id="preview-toggle" class="icon-button" title="Preview Markdown"><i class="fas fa-eye"></i></button>
             <button id="save-btn" class="icon-button" title="Save as .txt"><i class="fas fa-download"></i></button>
+            <button id="upload-btn" class="icon-button" title="Upload .txt File"><i class="fas fa-upload"></i></button>
+            <select id="templates-dropdown" title="Choose a Template">
+                <option value="default">Select Template</option>
+                <option value="template1">Template 1</option>
+                <option value="template2">Template 2</option>
+                <option value="template3">Template 3</option>
+            </select>
         </header>
-        <div id="content-container">
-            <textarea id="notepad" placeholder="Start typing..."></textarea>
-            <div id="preview-container" class="hidden">
-                <h2>Markdown Preview</h2>
-                <div id="preview"></div>
-            </div>
+        <div id="file-container">
+            <div class="file-tab" id="file-tab-1" onclick="switchFile(1)">File 1</div>
         </div>
+        <textarea id="notepad" placeholder="Start typing..."></textarea>
     </div>
     <script src="script.js"></script>
 </body>
